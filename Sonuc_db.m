@@ -57,7 +57,39 @@ inrot_lsm = apply_lsm(inrot, ww);
 
 tic;
 [NC1 cd1]=Dcikarma(ww,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
- cikarma=toc;
+cikarma=toc;
+
+%% ========== LSM'SIZ DAMGA CIKARMA (RAW) ==========
+% Saldiriya ugramis goruntulerden dogrudan damga cikarma
+[NC2_raw cd2_raw]=Dcikarma(JPEG30,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC3_raw cd3_raw]=Dcikarma(JPEG90,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC4_raw cd4_raw]=Dcikarma(JPEG2000_5,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC5_raw cd5_raw]=Dcikarma(JPEG2000_10,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC6_raw cd6_raw]=Dcikarma(SP01,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC7_raw cd7_raw]=Dcikarma(SP002,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC8_raw cd8_raw]=Dcikarma(Gauss001,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC9_raw cd9_raw]=Dcikarma(Gauss003,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC10_raw cd10_raw]=Dcikarma(Med2x2,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC11_raw cd11_raw]=Dcikarma(Med3x3,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC12_raw cd12_raw]=Dcikarma(Butter100_1,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC13_raw cd13_raw]=Dcikarma(Butter100_3,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC14_raw cd14_raw]=Dcikarma(Sharpening02,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC15_raw cd15_raw]=Dcikarma(Sharpening1,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC16_raw cd16_raw]=Dcikarma(blurring02,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC17_raw cd17_raw]=Dcikarma(blurring1,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC18_raw cd18_raw]=Dcikarma(scaling4,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC19_raw cd19_raw]=Dcikarma(scaling025,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC20_raw cd20_raw]=Dcikarma(Cropping25,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC21_raw cd21_raw]=Dcikarma(Cropping50,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC22_raw cd22_raw]=Dcikarma(Lowpass,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC23_raw cd23_raw]=Dcikarma(jpeg88,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC24_raw cd24_raw]=Dcikarma(jpeg725,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC25_raw cd25_raw]=Dcikarma(Gauss0004,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC26_raw cd26_raw]=Dcikarma(Gauss0025,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC27_raw cd27_raw]=Dcikarma(Med51,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+[NC28_raw cd28_raw]=Dcikarma(inrot,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
+
+%% ========== LSM'LI DAMGA CIKARMA ==========
 % LSM uygulanmis goruntulerden damga cikarma
 [NC2 cd2]=Dcikarma(JPEG30_lsm,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
 [NC3 cd3]=Dcikarma(JPEG90_lsm,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
@@ -86,8 +118,6 @@ tic;
 [NC26 cd26]=Dcikarma(Gauss0025_lsm,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
 [NC27 cd27]=Dcikarma(Med51_lsm,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
 [NC28 cd28]=Dcikarma(inrot_lsm,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
-% [NC13 cd13]=Dcikarma(rot,or,wm,kk1,kk2,kk3,kk4,t,durum,hangisicift,xx1,yy1,xx2,yy2);
-% LSM uygulamasi tamamlandi - saldiri sonrasi LSM ile duzeltme yapildi
 k1='Damgaliresim';
 k2=ww;
 k3='Orijinalresim';
@@ -275,12 +305,56 @@ k198=gomme;
 k199='cikarmasuresi';
 k200=cikarma;
 
+%% ========== LSM'SIZ NC DEGERLERI (RAW) ==========
+k201='NC2_JPEG30_raw';      k202=NC2_raw;
+k203='NC3_JPEG90_raw';      k204=NC3_raw;
+k205='NC4_JPEG2000_5_raw';  k206=NC4_raw;
+k207='NC5_JPEG2000_10_raw'; k208=NC5_raw;
+k209='NC6_SP01_raw';        k210=NC6_raw;
+k211='NC7_SP002_raw';       k212=NC7_raw;
+k213='NC8_Gauss001_raw';    k214=NC8_raw;
+k215='NC9_Gauss003_raw';    k216=NC9_raw;
+k217='NC10_Med2x2_raw';     k218=NC10_raw;
+k219='NC11_Med3x3_raw';     k220=NC11_raw;
+k221='NC12_Butter100_1_raw';k222=NC12_raw;
+k223='NC13_Butter100_3_raw';k224=NC13_raw;
+k225='NC14_Sharpening02_raw';k226=NC14_raw;
+k227='NC15_Sharpening1_raw';k228=NC15_raw;
+k229='NC16_blurring02_raw'; k230=NC16_raw;
+k231='NC17_blurring1_raw';  k232=NC17_raw;
+k233='NC18_scaling4_raw';   k234=NC18_raw;
+k235='NC19_scaling025_raw'; k236=NC19_raw;
+k237='NC20_Cropping25_raw'; k238=NC20_raw;
+k239='NC21_Cropping50_raw'; k240=NC21_raw;
+k241='NC22_Lowpass_raw';    k242=NC22_raw;
+k243='NC23_jpeg88_raw';     k244=NC23_raw;
+k245='NC24_jpeg725_raw';    k246=NC24_raw;
+k247='NC25_Gauss0004_raw';  k248=NC25_raw;
+k249='NC26_Gauss0025_raw';  k250=NC26_raw;
+k251='NC27_Med51_raw';      k252=NC27_raw;
+k253='NC28_inrot_raw';      k254=NC28_raw;
+
 %***************** bitis
 
 
 %ofsstruct=struct(	k7	,	k8	,	k9	,	k10	,	k11	,	k12	,	k13	,	k14	,	k15	,	k16	,	k17	,	k18	,	k19	,	k20	,	k21	,	k22	,	k23	,	k24	,	k25	,	k26	,	k27	,	k28	,	k29	,	k30	,	k85	,	k86	,	k87	,	k88	,	k89	,	k90	,	k91	,	k92	,	k93	,	k94	,	k95	,	k96	,	k97	,	k98	,	k99	,	k100	,	k101	,	k102	,	k103	,	k104	,	k105	,	k106	,	k107	,	k108	,	k109	,	k110	,	k111	,	k112	,	k113	,	k114	,	k115	,	k116	,	k117	,	k118	,	k119	,	k120	,	k121	,	k122	,	k123	,	k124	,	k125	,	k126	,	k127	,	k128	,	k129	,	k130	,	k131	,	k132	,	k133	,	k134	,	k135	,	k136	,	k137	,	k138	,	k139	,	k140);%	,	k141	,	k142	,	k143	,	k144	,	k145	,	k146	,	k147	,	k148	,	k149	,	k150	,	k151	,	k152	,	k153	,	k154	,	k155	,	k156	,	k157	,	k158	,	k159	,	k160	,	k161	,	k162	,	k163	,	k164	,	k165	,	k166	,	k167	,	k168	,	k169	,	k170	,	k171	,	k172	,	k173	,	k174	,	k175	,	k176	,	k177	,	k178	,	k179	,	k180	,	k181	,	k182	,	k183	,	k184	,	k185	,	k186	,	k187	,	k188	,	k189	,	k190	,	k191	,	k192,	k193	,	k194	,	k195	,	k196);
 
 % 
-  ofsstruct=struct(k1	,	k2	,	k3	,	k4	,	k5	,	k6	,	k7	,	k8	,	k9	,	k10	,	k11	,	k12	,	k13	,	k14	,	k15	,	k16	,	k17	,	k18	,	k19	,	k20	,	k21	,	k22	,	k23	,	k24	,	k25	,	k26	,	k27	,	k28	,	k29	,	k30	,	k31	,	k32	,	k33	,	k34	,	k35	,	k36	,	k37	,	k38	,	k39	,	k40	,	k41	,	k42	,	k43	,	k44	,	k45	,	k46	,	k47	,	k48	,	k49	,	k50	,	k51	,	k52	,	k53	,	k54	,	k55	,	k56	,	k57	,	k58	,	k59	,	k60	,	k61	,	k62	,	k63	,	k64	,	k65	,	k66	,	k67	,	k68	,	k69	,	k70	,	k71	,	k72	,	k73	,	k74	,	k75	,	k76	,	k77	,	k78	,	k79	,	k80	,	k81	,	k82	,	k83	,	k84	,	k85	,	k86	,	k87	,	k88	,	k89	,	k90	,	k91	,	k92	,	k93	,	k94	,	k95	,	k96	,	k97	,	k98	,	k99	,	k100	,	k101	,	k102	,	k103	,	k104	,	k105	,	k106	,	k107	,	k108	,	k109	,	k110	,	k111	,	k112	,	k113	,	k114	,	k115	,	k116	,	k117	,	k118	,	k119	,	k120	,	k121	,	k122	,	k123	,	k124	,	k125	,	k126	,	k127	,	k128	,	k129	,	k130	,	k131	,	k132	,	k133	,	k134	,	k135	,	k136	,	k137	,	k138	,	k139	,	k140	,	k141	,	k142	,	k143	,	k144	,	k145	,	k146	,	k147	,	k148	,	k149	,	k150	,	k151	,	k152	,	k153	,	k154	,	k155	,	k156	,	k157	,	k158	,	k159	,	k160	,	k161	,	k162	,	k163	,	k164	,	k165	,	k166	,	k167	,	k168	,	k169	,	k170	,	k171	,	k172	,	k173	,	k174	,	k175	,	k176	,	k177	,	k178	,	k179	,	k180	,	k181	,	k182	,	k183	,	k184	,	k185	,	k186	,	k187	,	k188	,	k189	,	k190	,	k191	,	k192,	k193	,	k194	,	k195	,	k196,k197,k198,k199,k200);
+  ofsstruct=struct(k1,k2,k3,k4,k5,k6,k7,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,...
+    k21,k22,k23,k24,k25,k26,k27,k28,k29,k30,k31,k32,k33,k34,k35,k36,k37,k38,k39,k40,...
+    k41,k42,k43,k44,k45,k46,k47,k48,k49,k50,k51,k52,k53,k54,k55,k56,k57,k58,k59,k60,...
+    k61,k62,k63,k64,k65,k66,k67,k68,k69,k70,k71,k72,k73,k74,k75,k76,k77,k78,k79,k80,...
+    k81,k82,k83,k84,k85,k86,k87,k88,k89,k90,k91,k92,k93,k94,k95,k96,k97,k98,k99,k100,...
+    k101,k102,k103,k104,k105,k106,k107,k108,k109,k110,k111,k112,k113,k114,k115,k116,...
+    k117,k118,k119,k120,k121,k122,k123,k124,k125,k126,k127,k128,k129,k130,k131,k132,...
+    k133,k134,k135,k136,k137,k138,k139,k140,k141,k142,k143,k144,k145,k146,k147,k148,...
+    k149,k150,k151,k152,k153,k154,k155,k156,k157,k158,k159,k160,k161,k162,k163,k164,...
+    k165,k166,k167,k168,k169,k170,k171,k172,k173,k174,k175,k176,k177,k178,k179,k180,...
+    k181,k182,k183,k184,k185,k186,k187,k188,k189,k190,k191,k192,k193,k194,k195,k196,...
+    k197,k198,k199,k200,...
+    k201,k202,k203,k204,k205,k206,k207,k208,k209,k210,k211,k212,k213,k214,k215,k216,...
+    k217,k218,k219,k220,k221,k222,k223,k224,k225,k226,k227,k228,k229,k230,k231,k232,...
+    k233,k234,k235,k236,k237,k238,k239,k240,k241,k242,k243,k244,k245,k246,k247,k248,...
+    k249,k250,k251,k252,k253,k254);
 
 end
