@@ -14,7 +14,7 @@ close all;
 
 % Resim dosyalari
 damga_resmi = 'Bint.jpg';           % Watermark (damga) resmi
-orijinal_resim = 'Lena512.bmp';     % Orijinal resim (kendi resminizin adini yazin)
+orijinal_resim = '32_d1.bmp';       % Orijinal resim
 
 % Gomme parametreleri (k1, k2, k3, k4)
 kk1 = 0.1;      % Gomme kuvveti 1

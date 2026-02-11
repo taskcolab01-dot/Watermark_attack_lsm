@@ -4,10 +4,20 @@ function [ofsstruct]=Sonuc(d1,o1,kk1,kk2,kk3,kk4,t,derece,durum,hangisicift,xx1,
 tic;
 or=imread(o1);
 
+% Orijinal resim grayscale ise RGB'ye donustur
+if size(or, 3) == 1
+    or = cat(3, or, or, or);
+end
+
 % watermark=imread(d1);
 % [wm]=rbirlestir(watermark);
 
 watermark1=imread(d1);
+
+% Grayscale ise RGB'ye donustur
+if size(watermark1, 3) == 1
+    watermark1 = cat(3, watermark1, watermark1, watermark1);
+end
 
 [wm]=double(watermark1);
 
