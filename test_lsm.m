@@ -13,8 +13,9 @@ close all;
 % =========================================================================
 
 % Resim dosyalari
+% NOT: Kendi resimlerinizi kullanmak icin asagidaki dosya adlarini degistirin
 damga_resmi = 'Bint.jpg';           % Watermark (damga) resmi
-orijinal_resim = 'Lena512.bmp';     % Orijinal resim (kendi resminizin adini yazin)
+orijinal_resim = 'Damgali.bmp';     % Cover resim (512x512 RGB)
 
 % Gomme parametreleri (k1, k2, k3, k4)
 kk1 = 0.1;      % Gomme kuvveti 1

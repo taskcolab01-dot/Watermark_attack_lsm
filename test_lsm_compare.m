@@ -13,8 +13,11 @@ close all;
 % =========================================================================
 
 % Resim dosyalari
-damga_resmi = 'Bint.jpg';           % Watermark (damga) resmi
-orijinal_resim = '32_d1.bmp';       % Orijinal resim
+% NOT: Kendi resimlerinizi kullanmak icin asagidaki dosya adlarini degistirin
+% damga_resmi: Watermark resmi (kucuk boyutlu olmali, ornegin 32x32)
+% orijinal_resim: Cover resmi (buyuk boyutlu olmali, ornegin 512x512)
+damga_resmi = 'Bint.jpg';           % Watermark (damga) resmi - 512x512
+orijinal_resim = 'Damgali.bmp';     % Cover resim - 512x512 RGB
 
 % Gomme parametreleri (k1, k2, k3, k4)
 kk1 = 0.1;      % Gomme kuvveti 1
